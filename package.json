@@ -27,6 +27,8 @@
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
+    "test": "vitest",
+    "demo": "tsx demo.ts",
     "prepublishOnly": "npm run build"
   },
   "keywords": [
@@ -40,7 +42,9 @@
   "devDependencies": {
     "@types/node": "^22.10.1",
     "tsup": "^8.3.5",
-    "typescript": "^5.7.2"
+    "tsx": "^4.21.0",
+    "typescript": "^5.7.2",
+    "vitest": "^3.2.4"
   },
   "dependencies": {
     "chalk": "^4.1.2"
