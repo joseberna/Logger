@@ -1,0 +1,51 @@
+{
+  "name": "@joseberna/logger",
+  "author": "Jose Berna",
+  "version": "1.0.0",
+  "description": "Cross-platform logger for backend and frontend with service context and colors",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "browser": {
+        "import": "./dist/browser.mjs",
+        "require": "./dist/browser.js"
+      },
+      "node": {
+        "import": "./dist/index.mjs",
+        "require": "./dist/index.js"
+      },
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "logger",
+    "logging",
+    "chalk",
+    "frontend",
+    "backend"
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.10.1",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
