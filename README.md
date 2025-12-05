@@ -1,4 +1,4 @@
-# @joseberna/logger
+# @moscotoce/logger
 
 A professional, cross-platform logger for Node.js and Browser environments. It supports service-based context, colors, and log levels.
 
@@ -13,9 +13,9 @@ A professional, cross-platform logger for Node.js and Browser environments. It s
 ## Installation
 
 ```bash
-npm install @joseberna/logger
+npm install @moscotoce/logger
 # or
-yarn add @joseberna/logger
+yarn add @moscotoce/logger
 ```
 
 ## Usage
@@ -23,7 +23,7 @@ yarn add @joseberna/logger
 ### Basic Usage
 
 ```typescript
-import logger from '@joseberna/logger';
+import logger from '@moscotoce/logger';
 
 // Simple log
 logger.info('Server started');
@@ -55,7 +55,7 @@ logger.success('Deployment successful');
 You can configure the logger instance:
 
 ```typescript
-import logger from '@joseberna/logger';
+import logger from '@moscotoce/logger';
 
 // Enable debug mode explicitly
 logger.setConfig({ debugMode: true });
@@ -73,7 +73,7 @@ logger.setConfig({
 You can import the `Logger` class to create separate instances.
 
 ```typescript
-import { Logger } from '@joseberna/logger';
+import { Logger } from '@moscotoce/logger';
 
 const myLogger = new Logger({
   debugMode: true

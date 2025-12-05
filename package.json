@@ -1,5 +1,5 @@
 {
-  "name": "@joseberna/logger",
+  "name": "@moscotoce/logger",
   "author": "Jose Berna",
   "version": "1.0.0",
   "description": "Cross-platform logger for backend and frontend with service context and colors",
